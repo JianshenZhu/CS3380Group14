@@ -1,0 +1,40 @@
+/*
+ * Group 14
+ * CS3380 Term Project
+ * Animates page on startup
+ * using CSS transistions and keyframes
+ */
+
+/* drop function */
+@keyframes drop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+nav {
+    animation-name: drop;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+}
+
+/* fade-in function */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+main, header, footer {
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+}
