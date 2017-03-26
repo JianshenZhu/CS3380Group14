@@ -1,0 +1,21 @@
+# make sure SVG files display properly
+AddType image/svg+xml .svg .svgz
+
+# HTAccess makes indexes pretty
+<IfModule mod_autoindex.c>
+# set index options
+IndexOptions IgnoreCase FancyIndexing FoldersFirst NameWidth=* SuppressDescription SuppressHTMLPreamble
+
+# set display order
+IndexOrderDefault Ascending Name
+
+# force charset
+AddDefaultCharset utf-8
+
+# specify header file
+HeaderName /~GROUP14/inc/top_template.php
+
+# specify footer file
+ReadmeName /~GROUP14/inc/bottom_template.php
+
+</IfModule>

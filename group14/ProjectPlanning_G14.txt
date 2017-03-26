@@ -1,0 +1,52 @@
+ProjectPlanning_G14.txt
+
+Group 14
+
+Jianshen, HG, Landen, Jason, Bruce
+
+Communication:
+
+- Weekly meetings at Engineering Library on Sunday
+- Communication via GroupMe messaging application
+
+Milestone 1:
+
+- Deadline: 2017-03-06
+- Collective 2.5-hour discussion on ERD using dry erase board
+	- Majority of time was spent on Order and History entities
+- Landen recreated ERD using draw.io
+
+Milestone 2:
+
+- Deadline: 2017-03-15
+- Collectively updated ERD on our Sunday meeting, 2017-03-12
+	- Added log table
+	- Added departure data in Train entity
+	- Added EngineHistory for Locomotive
+- We updated this planning document based on discussion at Sunday meeting
+- Landen/Jianshen wrote CREATE TABLE statements
+- Jianshen sets up GitHub for backup
+	- We all need to make accounts
+- Bruce drew logo
+	- Catfish theme?
+- HG working on PHP login
+- Jason working CSS/HTML
+	- He will update ERD to version 2
+- We discussed:
+	- safe password hashing
+	- CSS/HTML semantics
+	- Color palettes
+	- Generalization hierarchies in SQL
+	- .vimrc for spaces
+
+Milestone 3:
+- Due Date: 2017-04-05
+- We will meet next Sunday
+- Modules to schedule:
+	- Login structure
+	- Design
+	- Backups & Documentation
+	- Logging
+	- PHP pages
+		- Making an order, Admin stuff, Employee pages, Searching
+	- Marketing?

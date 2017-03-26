@@ -1,0 +1,169 @@
+/*
+ * Group 14
+ * CS3380 Term Project
+ * GLOBAL STYLES
+ */
+
+/* the root holds global colors */
+:root {
+    --lightFade: #D4DDCC;
+    --light: #DDDDCC;
+    --lightHover: #E7DDCC;
+
+    --darkFade: GoldenRod;
+    --dark: DarkGoldenRod;
+    --darkHover: Black;
+
+    --linkFade: LightSlateGrey;
+    --link: DarkSlateGrey;
+    --linkHover: Black;
+
+    --accent: OliveDrab;
+    --accent: Olive;
+    --accentHover: DarkOliveGreen;
+}
+
+body {
+    background-color: black;
+    background-image:url("http://www.publicdomainpictures.net/pictures/150000/velka/kansas-city-union-station.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+.logout {
+    background-color: var(--dark);
+    border: 1px solid var(--accent);
+    color: var(--link);
+    text-align: center;
+    text-decoration: none;
+
+    display: block;
+    padding: 0.3em;
+
+    transition:all 0.5s ease-in-out;
+}
+.logout:hover {
+    background-color: var(--linkHover);
+    transition:all 0.2s ease-in-out;
+}
+main {
+    background: var(--lightFade);
+    border: 2px solid var(--dark);
+    border-radius: 0.3em;
+    padding: 1em;
+    margin: auto;
+    max-width:800px; /* page is 800 pixels at most */
+}
+
+#h {
+	color: #ffffff;
+}
+#userbox {
+    background-color: var(--light);
+    border: 1px solid var(--dark);
+}
+
+/* Form stuff */
+form input, form label {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px;
+    margin: 5px;
+}
+form input[type="radio"] + label { /* label following radio */
+    background: var(--light);
+    border: 1px solid black;
+    color: var(--dark);
+    cursor: pointer;
+}
+form input[type="radio"] {
+    display: none;
+}
+form input[type="radio"]:checked + label { /* label following checked radio */
+    background: var(--lightHover);
+    color: var(--darkHover);
+}
+iframe {
+    border: none;
+    display: block;
+    margin: auto;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 3em;
+}
+th {
+    border-bottom: 1px solid var(--dark);
+}
+td {
+    border: 1px solid var(--accent);
+    word-wrap: break-word;
+}
+/* Header */
+header {
+    font-family: 'Petrona'; /* uses Google's font API, must be linked in meta.php */
+    margin: 80px auto 0px auto; /*<*/
+}
+header h1, header h2 {
+    margin: 1px;
+    text-align: center;
+}
+/* Navigation Bar */
+nav {
+    background-color: var(--lightFade);
+    border-top: 2px solid var(--dark);
+    border-bottom: 2px solid var(--dark);
+    opacity: 0.85;
+    text-align: center;
+
+    margin: -80px auto; /* This counters header margins */
+    position: fixed;
+    width: 100%;
+
+    transition: opacity 0.2s ease-out;
+}
+nav:hover {
+    opacity: 100;
+    transition: opacity 0.2s ease-in;
+}
+nav a {
+    color: var(--dark);
+    padding: 0.5em 0.1em;
+    text-decoration:none;
+}
+nav a:hover {
+    text-shadow:0px 0px 8px var(--accent);
+    transition:all 0.2s ease-in-out;
+}
+nav ul {
+    margin: 0.5em auto;
+    padding: 0;
+    list-style-type:none;
+}
+nav li {
+    display:inline-block;
+    padding: 0 0.5em;
+}
+nav form, nav input {
+    padding: 0;
+    margin: 0;
+    display: inline !important;
+}
+/* Footer stuff */
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+footer p {
+    flex: 1;
+}
+footer .footer-text {
+    background-color: var(--lightFade);
+    font-size: smaller;
+}
